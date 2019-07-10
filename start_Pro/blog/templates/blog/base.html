@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+      <link rel="stylesheet" type="text/css" href="{% static  'blog/main.css' %}">
 
    {% if title %}
 
@@ -18,15 +20,90 @@
 </head>
 
 <body>
-<div class="container">
-{% block content %}{% endblock %}
-</div>
- <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
+          <div id="container1" class="container">
+                <br /><a name="first"></a>
+                 <div id="backgd">
+                     <h2 class="logo"><a   href="#first" ><h2  style="color:red;">RESUEBA</h2></a></h2>
+                     <p class="head"><b>An Enthusiastic Book Collector</b></p>
+
+
+		                 <div class="him">
+		                        <div class="cube">
+                                     <div class="cubeFace" > <br /><br /><img src="..\CSS_Proj\images\logo.jpg"></div>
+                                        <div class="cubeFace face2"><a href="form.html"><br /><h2 style="color:red;">Donate<br /> a <br />Book</h2></a></div>
+
+                                </div>
+                         </div>
+		  <p class="contact"><a href="signup.html" style="color:black;" ><b>SignUp</b></p></a>
+
+		  <h1 class="intro"><b>As an Enthusiastic Book Collector, there is no better feeling than the thrill of finally <br />getting my hands on an item I have been trying to add to my collection.  </h1>
+  </b>
+	 </div>
+
+
+
+
+
+	 <a name="second"></a>
+
+
+       <div id="image1"><a name="first"></a>
+            <img src='{% static  "blog\images\pic61.jpeg"  width=2020px height=980px  %} ' />
+	   </div>
+
+	   <br />
+
+	        <div id="image2"><a name="third"></a>
+                <img src ='{% static  "blog\images\pic21.jpeg" width=2020px height=980px %} '  />
+            </div>
+
+	   <br /><a name="fourth"></a>
+
+
+	       <div id="image3">
+            <img src='{% static  "blog\images\pic3.jpeg" width=2020px height=980px %}' />
+       </div>
+
+	  <br /><a name="fifth"></a>
+
+
+	       <div id="image4">
+            <img src='{% static  "blog\images\pic30.jpeg"  width=2020px height=980px %}' />
+       </div>
+	   <br /><a name="six"></a>
+
+	       <div id="image5">
+            <img src='{% static  "blog\images\pic5.jpeg" width=2020px height=980px %}' />
+       </div>
+
+	    <br /><a name="seventh"></a>
+
+	       <div id="image6">
+            <img src='{% static  "blog\images\pic33.jpeg" width=2020px height=980px %}' />
+       </div>
+
+	<div id="move">
+          <ul>
+           <a href="#first"><li></li></a>
+            <a href="#second"><li></li></a>
+            <a href="#third"><li></li></a>
+            <a href="#fourth"><li></li></a>
+           <a href="#fifth"><li></li></a>
+            <a href="#six"><li></li></a>
+			<a href="#seventh"><li></li></a>
+         </ul>
+	</div>
+
+
+
+                <!--<div class="container">-->
+                <!--{% block content %}{% endblock %}-->
+                <!--</div>-->
+                 <!-- Optional JavaScript -->
+                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>
